@@ -1,2 +1,1 @@
-#test
-some new text
+#test text

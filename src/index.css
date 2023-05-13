@@ -1,0 +1,11 @@
+body {
+  background: blue;
+  user-select: none;
+}
+
+.image {
+  width: 500px;
+  height: 200px;
+  background-size: cover;
+  background-image: url('img/code.png');
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our pets</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link type="image/x-icon" href="./assets/favicon/favicon.ico" rel="shortcut icon">
+</head>
+<body>
+    <header class="wrapper">
+        <div class="container ">
+            <nav class="header">
+                <a class="logo__link" href="/ramzes-84-JSFE2023Q1/shelter/index.html" title="Main page">
+                    <h1 class="logo__h1 georgia_400 _pets-page">Cozy House</h1>
+                    <div class="logo__caption arial_400 _pets-page">Shelter for pets in Boston</div>
+                </a>
+                <div class="menu_icon _pets-page">
+                    <span></span>
+                </div>
+                <div class="menu__blackout">
+                    <div class="menu__container arial_400">
+                        <ul class="menu">
+                            <li class="menu__item _pets-page"><a href="/ramzes-84-JSFE2023Q1/shelter/index.html" title="About">About the shelter</a></li>
+                            <li class="menu__item _pets-page clicked"><a href="#" title="Pets">Our pets</a></li>
+                            <li class="menu__item _pets-page"><a href="/ramzes-84-JSFE2023Q1/shelter/index.html#help" title="Help">Help the shelter</a></li>
+                            <li class="menu__item _pets-page"><a href="#contacts" title="Contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper gray">
+            <div class="container">
+                <section class="friends _pets-page" id="friends">
+                    <h3 class="georgia_400">Our friends who <br> are looking for a house</h3>
+                    <div class="slider _pets-page">
+                        <div class="slider__content _pets-page">
+                        </div>
+                    </div>
+                    <div class="slider__buttons">
+                        <button class="slider__arr_start not-avail">&lt;&lt;</button>
+                        <button class="slider__arr_back not-avail">&lt;</button>
+                        <button class="slider__arr_page active"></button>
+                        <button class="slider__arr_next">&gt;</button>
+                        <button class="slider__arr_end">&gt;&gt;</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper footer-gradient">
+            <div class="container">
+                <div class="footer" id="contacts">
+                    <div class="footer__contacts">
+                        <h3>For questions and suggestions</h3>
+                        <a href="mailto:email@shelter.com" title="Mail">
+                            <div class="flex-row__contact">
+                                <img src="../shelter/assets/icons/mail.svg" alt="Icon">
+                                <h4 class="">email@shelter.com</h4>
+                            </div>
+                        </a>
+                        <a href="tel:+136745677554" title="Call us">
+                            <div class="flex-row__contact">
+                                <img src="../shelter/assets/icons/phone.svg" alt="Icon">
+                                <h4 class="">+13 674 567 75 54</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer__address">
+                        <h3>We are waiting for your visit</h3>
+                        <a href="https://goo.gl/maps/L8EeKooFda9W1yas5" title="Find on the map" target="_blank">
+                            <div class="flex-row__address">
+                                <img src="../shelter/assets/icons/pin.svg" alt="Icon">
+                                <h4 class="">1 Central Street, Boston (entrance from the store)</h4>
+                            </div>
+                        </a>
+                        <a href="https://goo.gl/maps/HmQcYRPeaXwYpYs37" title="Find on the map" target="_blank">
+                            <div class="flex-row__address _second">
+                                <img src="../shelter/assets/icons/pin.svg" alt="Icon">
+                                <h4 class="">18 South Park, London</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="../shelter/assets/img/footer-puppy.png" alt="Cute puppy" class="footer__img">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup__bgrnd hide">
+        <div class="popup__container">
+            <div class="popup__close-btn">
+                <img src="../shelter/assets/icons/close.svg" alt="Card">
+            </div>
+            <div class="popup__content">
+                <img class="popup__img" src="../shelter/assets/img/pets-jennifer.png" alt="Pet">
+                <div class="popup__text">
+                    <div class="popup__name"></div>
+                    <div class="popup__type"></div>
+                    <div class="popup__desc"></div>
+                    <div class="popup__prop">
+                        <ul>
+                            <li><b>Age:</b> <span class="popup__age"></span></li>
+                            <li><b>Inoculations:</b> <span class="popup__ino"></span></li>
+                            <li><b>Diseases:</b> <span class="popup__dis"></span></li>
+                            <li><b>Parasites:</b> <span class="popup__par"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -28,7 +28,7 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),
     // new CleanWebpackPlugin(),
-    // new EslingPlugin({ extensions: 'ts' })
+    new EslingPlugin({ extensions: 'ts' })
   ],
   module: {
     rules: [

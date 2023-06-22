@@ -13,7 +13,7 @@ module.exports = {
   mode,
   target,
   devtool,
-  entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index.js')],
+  entry: ['@babel/polyfill', path.resolve(__dirname, 'src', 'index')],
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
@@ -26,7 +26,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
-    })
+    }),
+    // new CleanWebpackPlugin(),
+    // new EslingPlugin({ extensions: 'ts' })
   ],
   module: {
     rules: [
@@ -96,7 +98,14 @@ module.exports = {
           }
         ],
         type: 'asset/resource',
+      },
+      {
+        test: /\.ts$/i,
+        use: 'ts-loader',
       }
     ]
+  },
+  resolve: {
+    extensions: ['.ts', '.js', '.json'],
   }
 }
